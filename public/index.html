@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Базы данных ЭлЖур</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <base href="/">
+</head>
+<body>
+<div class="app-container">
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-database"></i>
+                <span>Базы данных ЭлЖур</span>
+            </div>
+        </div>
+
+        <div class="sidebar-search">
+            <i class="fas fa-search"></i>
+            <label for="tableSearch"></label>
+            <input type="text" id="tableSearch" placeholder="Поиск..." autocomplete="off">
+        </div>
+
+        <nav class="sidebar-nav" id="sidebarNav"></nav>
+    </aside>
+
+    <div class="sidebar-resizer" id="sidebarResizer"></div>
+
+    <main class="main-content">
+        <header class="main-header">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="header-title">
+                <h1>Реестр обучающихся</h1>
+            </div>
+            <div class="header-actions">
+                <button class="btn-theme" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="content-container" id="contentContainer"></div>
+    </main>
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
